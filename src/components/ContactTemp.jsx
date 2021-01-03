@@ -97,14 +97,14 @@ function ContactTemp() {
 
   const data = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { in: "blogBanner.jpg" }) {
+      banner: file(relativePath: { in: "blogBanner.png" }) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      bannerMobile: file(relativePath: { in: "blogBannerMobile.jpg" }) {
+      bannerMobile: file(relativePath: { in: "blogBanner.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -215,7 +215,7 @@ function ContactTemp() {
       <div className={classes.banner}>
         <Hidden smUp>
           <Img
-            alt={`surfers sitting in water`}
+            alt={`house boat`}
             fluid={data.bannerMobile.childImageSharp.fluid}
             placeholderStyle={{ backgroundColor: `lightgray` }}
             className={classes.bannerImg}
@@ -224,7 +224,7 @@ function ContactTemp() {
         </Hidden>
         <Hidden xsDown>
           <Img
-            alt={`surfers sitting in water`}
+            alt={`house boat`}
             fluid={data.banner.childImageSharp.fluid}
             placeholderStyle={{ backgroundColor: `lightgray` }}
             className={classes.bannerImg}

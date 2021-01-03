@@ -1,15 +1,10 @@
-import React, { Fragment } from "react"
-import { useTranslation } from "react-i18next"
-import { Link } from "gatsby-theme-material-ui"
-import clsx from "clsx"
+import React from "react"
 import { makeStyles } from "@material-ui/styles"
 import IconButton from "@material-ui/core/IconButton"
-import Hidden from "@material-ui/core/Hidden"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import PinterestIcon from "@material-ui/icons/Pinterest"
 import Container from "../ui/Container"
-import Contact from "../Contact"
 import BottomFooter from "./BottomFooter"
 import logo from "../../assets/logos/logo.png"
 
@@ -139,8 +134,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Footer() {
   const classes = useStyles()
-  const { t } = useTranslation()
-  const blog = []
 
   return (
     <footer className={classes.footer}>
@@ -177,7 +170,7 @@ function Footer() {
             </IconButton>
           </div>
         </div>
-        <Hidden xsDown>
+        {/*  <Hidden xsDown>
           <div className={classes.linksContainer}>
             <div className={classes.list}>
               <p className={classes.title}>{t("links.blog")}</p>
@@ -191,8 +184,8 @@ function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
-        </Hidden>
+          </div> 
+        </Hidden> */}
       </Container>
 
       <BottomFooter />
