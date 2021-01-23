@@ -276,7 +276,7 @@ const Blog = ({ posts, tag, numPages, currentPage }) => {
       }
     }
   `)
-  const tags = ["home", "lifestyle", "travel", "gear", "community"]
+  const tags = ["home", "diy", "design"]
 
   return (
     <>

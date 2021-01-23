@@ -116,6 +116,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `houseafloat`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `House Afloat`,

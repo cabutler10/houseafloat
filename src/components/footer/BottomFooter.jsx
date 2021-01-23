@@ -56,20 +56,6 @@ function Footer() {
       padding="none"
     >
       <div className={classes.copyrightContainer}>
-        <Link
-          to="/dataProtection"
-          className={clsx(classes.textSmall, classes.link)}
-        >
-          {t("links.data")}
-        </Link>
-        |
-        <Link
-          to="/termsAndConditions"
-          className={clsx(classes.textSmall, classes.link)}
-        >
-          {t("links.terms")}
-        </Link>
-        <Hidden smDown>|</Hidden>
         <Link to="/imprint" className={clsx(classes.textSmall, classes.link)}>
           {t("links.imprint")}
         </Link>
